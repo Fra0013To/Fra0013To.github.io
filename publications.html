@@ -8,66 +8,164 @@
     <!-- Includi il link al file CSS di Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pubtabs.css">
+    <script>
+        function showTab(tabId) {
+            // Nascondi tutti i contenuti delle schede
+            var tabContents = document.querySelectorAll('.tab-content > div');
+            tabContents.forEach(function (content) {
+                content.classList.remove('active');
+            });
+
+            // Mostra solo il contenuto della scheda selezionata
+            var selectedTabContent = document.getElementById(tabId);
+            selectedTabContent.classList.add('active');
+        }
+    </script>
 </head>
 
 <body>
 
     <header>
         <img src="immagine_del_ricercatore.jpg" alt="Foto del Ricercatore" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
-        <h1>Nome Ricercatore</h1>
+        <h1>Francesco Della Santa</h1>
         <!-- Aggiungi icone per link esterni accanto alle voci "Posizione" e "Affiliazione" -->
         <p>
-            <i class="fas fa-map-marker-alt"></i> Posizione |
-            <i class="fas fa-building"></i> Affiliazione
+            <i class="fas fa-graduation-cap"></i> Assistant Professor |
+            <i class="fas fa-building"></i> Dipartimento di Scienze Matematiche G. L. Lagrange |
+            <i class="fas fa-map-marker-alt"></i> Politecnico di Torino, Turin, Italy
         </p>
     </header>
 
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="publications.html">Pubblicazioni</a></li>
+            <li><a href="publications.html">Publications</a></li>
             <!-- Aggiungi altri collegamenti alle tue pagine -->
         </ul>
     </nav>
-
+	
     <section>
-        <h2>Pubblicazioni</h2>
+        <!-- Aggiunti gruppi di schede per Pubblicazioni su Rivista, Proceedings e Preprint -->
+        <div class="tabs-group">
+            <div class="tab" onclick="showTab('journal-tab')">Journal Articles</div>
+            <div class="tab" onclick="showTab('proceedings-tab')">Conference Proceedings</div>
+            <div class="tab" onclick="showTab('preprint-tab')">Preprints</div>
+        </div>
 
-        <ol reversed>
-            <li>
-                <h3>Titolo della Pubblicazione 1</h3>
-                <p>Autori: Autori 1</p>
-                <p>Rivista: Rivista 1</p>
-                <p>Anno: 2022</p>
-                <p>DOI: <a href="https://doi.org/DOI12345" target="_blank">DOI12345</a></p>
-            </li>
+        <!-- Aggiunti contenuti delle schede -->
+        <div class="tab-content">
+            <!-- Contenuto della scheda Pubblicazioni su Rivista -->
+            <div id="journal-tab" class="active">
+                <h2>Journal Articles</h2>
+                <ol reversed>
+		    <li>
+		        <h3>Discontinuous neural networks and discontinuity learning</h3>
+		        <p>F. Della Santa, S. Pieraccini</p>
+		        <p>Journal of Computational and Applied Mathematics, 2023</p>
+		        <p>DOI: <a href="https://doi.org/10.1016/j.cam.2022.114678">10.1016/j.cam.2022.114678</a></p>
+		    </li>
 
-            <li>
-                <h3>Titolo della Pubblicazione 2</h3>
-                <p>Autori: Autori 2</p>
-                <p>Rivista: Rivista 2</p>
-                <p>Anno: 2023</p>
-                <p>DOI: <a href="https://doi.org/DOI67890" target="_blank">DOI67890</a></p>
-            </li>
+		    <li>
+		        <h3>Graph-Informed Neural Networks for Regressions on Graph-Structured Data</h3>
+		        <p>S. Berrone, F. Della Santa, A. Mastropietro, S. Pieraccini, F. Vaccarino</p>
+		        <p>Mathematics, 2022</p>
+		        <p>DOI: <a href="https://doi.org/10.3390/math10050786">10.3390/math10050786</a></p>
+		    </li>
+		    
+		    <li>
+		        <h3>Machine learning for flux regression in discrete fracture networks</h3>
+		        <p>S. Berrone, F. Della Santa, S. Pieraccini, F. Vaccarino</p>
+		        <p>GEM - International Journal on Geomathematics, 2021</p>
+		        <p>DOI: <a href="https://doi.org/10.1007/s13137-021-00176-0">10.1007/s13137-021-00176-0</a></p>
+		    </li>
+		    
+		    <li>
+		        <h3>Design optimization of renewable energy systems for NZEBs based on deep residual learning</h3>
+		        <p>M. Ferrara, F. Della Santa, M. Bilardo, A. De Gregorio, A. Mastropietro, U. Fugacci, F. Vaccarino, E. Fabrizio</p>
+		        <p>Renewable Energy, 2021</p>
+		        <p>DOI: <a href="https://doi.org/10.1016/j.renene.2021.05.044">10.1016/j.renene.2021.05.044</a></p>
+		    </li>
+		    
+		    <li>
+		        <h3>Layer-wise relevance propagation for backbone identification in discrete fracture networks</h3>
+		        <p>S. Berrone, F. Della Santa, A. Mastropietro, S. Pieraccini, F. Vaccarino</p>
+		        <p>Journal of Computational Science, 2021</p>
+		        <p>DOI: <a href="https://doi.org/10.1016/j.jocs.2021.101458">10.1016/j.jocs.2021.101458</a></p>
+		    </li>
+		    
+		    <li>
+		        <h3>Performance Analysis of Multi-Task Deep Learning Models for Flux Regression in Discrete Fracture Networks</h3>
+		        <p>S. Berrone, F. Della Santa</p>
+		        <p>Geosciences, 2021</p>
+		        <p>DOI: <a href="https://doi.org/10.3390/geosciences11030131">10.3390/geosciences11030131</a></p>
+		    </li>
+		    
+		    <li>
+		        <h3>Multi-Objective Optimisation of an Aerostatic Pad: Design of Position, Number and Diameter of the Supply Holes</h3>
+		        <p>F. Colombo, F. Della Santa, S. Pieraccini</p>
+		        <p>Journal of Mechanics, 2019</p>
+		        <p>DOI: <a href="https://doi.org/10.1017/jmech.2019.41">10.1017/jmech.2019.41</a></p>
+		    </li>
 
-            <!-- Aggiungi altre pubblicazioni secondo lo stesso formato -->
+		    <!-- Aggiungi altre pubblicazioni secondo lo stesso formato -->
 
-        </ol>
+		</ol>
+            </div>
 
+            <!-- Contenuto della scheda Proceedings -->
+            <div id="proceedings-tab">
+                <h2>Conference Proceedings</h2>
+                <ol reversed>
+                
+                    <li>
+		        <h3>Predicting flux in Discrete Fracture Networks via Graph Informed Neural Networks</h3>
+		        <p>S. Berrone, F. Della Santa, A. Mastropietro, S. Pieraccini, F. Vaccarino</p>
+		        <p><a href="https://ml4physicalsciences.github.io/2021/">Machine Learning and the Physical Sciences, 2021</a></p>
+		        <p>Neural Information Processing Systems (NeurIPS) Foundation</p>
+		        <p>URL: <a href="https://ml4physicalsciences.github.io/2021/files/NeurIPS_ML4PS_2021_87.pdf"> Proceeding</a>, <a href="https://ml4physicalsciences.github.io/2021/files/NeurIPS_ML4PS_2021_87_poster.png"> Poster</a>
+		    </li>
+		    
+                    <li>
+		        <h3>Application of Deep Learning to Design Renewable Energy Systems for a Zero Energy Multifamily Building</h3>
+		        <p>F. Della Santa, M. Ferrara, M. Bilardo, A. De Gregorio, A. Mastropietro, U. Fugacci, F. Vaccarino, E. Fabrizio</p>
+		        <p><a href="https://www.cologne2020.sdewes.org/"> 15th SDEWES Conference Cologne 2020</a></p>
+		        <p>CD Proceedings - Dubrovnik Conference on Sustainable Development of Energy, Water and Environment Systems (ISSN 1847-7178)</p>
+		        <p>URL: - </p>
+		    </li>
+		    
+                    <li>
+		        <h3>Discrete Fracture Network insights by eXplainable AI</h3>
+		        <p>S. Berrone, F. Della Santa, A. Mastropietro, S. Pieraccini, F. Vaccarino</p>
+		        <p><a href="https://ml4physicalsciences.github.io/2020/">Machine Learning and the Physical Sciences, 2020</a></p>
+		        <p>Neural Information Processing Systems (NeurIPS) Foundation</p>
+		        <p>URL: <a href="https://ml4physicalsciences.github.io/2020/files/NeurIPS_ML4PS_2020_53.pdf"> Proceeding</a>, <a href="https://ml4physicalsciences.github.io/2020/files/NeurIPS_ML4PS_2020_53_poster.pdf"> Poster</a>, <a href="https://www.youtube.com/watch?v=dKC5eYWEKEc"> Presentation</a></p>
+		    </li>
+                </ol>
+            </div>
+
+            <!-- Contenuto della scheda Preprint -->
+            <div id="preprint-tab">
+                <h2>Preprints</h2>
+                <ol reversed>
+                    <!-- ... (elenco dei preprint come prima) ... -->
+                </ol>
+            </div>
+        </div>
     </section>
 
     <footer>
     <!-- Aggiungi icone social network nel footer -->
     <p>
         <i class="fas fa-envelope"></i> <a href="francesco.dellasanta@polito.it">francesco.dellasanta@polito.it</a> |
-        <i class="fab fa-github"></i> <a href="https://github.com/tuonome" target="_blank">GitHub</a> |
-        <i class="fab fa-orcid"></i> <a href="https://orcid.org/tuo-orcid-id" target="_blank"> ORCID</a> |
-        <i class="fab fa-researchgate"></i> <a href="https://www.researchgate.net/profile/tuo-nome" target="_blank"> ResearchGate</a> |
-        <i class="ai ai-google-scholar-square ai-lg"></i> <a href="https://scholar.google.com/citations?user=tuo-id" target="_blank"> Google Scholar</a> |
-        <i class="ai ai-scopus-square ai-lg"></i>  <a href="https://www.scopus.com/author/tuo-autore-id" target="_blank">Scopus</a> | 
-        <i class="fab fa-linkedin"></i> LinkedIn |
+        <i class="fab fa-github"></i> <a href="https://github.com/Fra0013To">GitHub</a> |
+        <i class="fab fa-orcid"></i> <a href="https://orcid.org/0000-0002-2202-9600"> ORCID</a> |
+        <i class="fab fa-researchgate"></i> <a href="https://www.researchgate.net/profile/Francesco-Della-Santa/research"> ResearchGate</a> |
+        <i class="ai ai-google-scholar-square ai-lg"></i> <a href="https://scholar.google.com/citations?user=yOiJ6ZUAAAAJ&hl=it"> Google Scholar</a> |
+        <i class="ai ai-scopus-square ai-lg"></i>  <a href="https://www.scopus.com/authid/detail.uri?authorId=57222506935">Scopus</a> | 
+        <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/francesco-della-santa-202a0613a/"> LinkedIn </a> |
     </p>
-	</footer>
+    </footer>
 
 </body>
 

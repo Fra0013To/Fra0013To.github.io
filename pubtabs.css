@@ -1,0 +1,32 @@
+/* Aggiunti stili per le schede e il contenuto corrispondente */
+        .tabs-group {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #f08080;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .tab:hover {
+            background-color: #e74c3c; /* Cambia colore al passaggio del mouse */
+        }
+
+        .tab-content {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .tab-content > div {
+            display: none;
+        }
+
+        .tab-content div.active {
+            display: block;
+        }

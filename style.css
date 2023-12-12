@@ -113,6 +113,7 @@ footer p {
     color: #fff; /* Modificato il colore per contrastare con il rosso*/
 }
 
+
 /* Responsiveness */
 @media only screen and (max-width: 600px) {
     body {
@@ -124,3 +125,5 @@ footer p {
         margin: 10px 0;
     }
 }
+
+
