@@ -1,0 +1,96 @@
+/* Reset CSS */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #e74c3c; /* Tonalità di rosso */
+    color: #fff;
+}
+
+nav {
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #e74c3c; /* Cambia colore al passaggio del mouse */
+}
+
+section {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #333; /* Colore del testo per la sezione principale */
+}
+
+h1 {
+    color: #fff; /* Modificato il colore del titolo a bianco per contrastare con il rosso */
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #e74c3c; /* Tonalità di rosso */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
