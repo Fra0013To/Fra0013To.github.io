@@ -40,6 +40,16 @@ nav li {
     margin-right: 20px;
 }
 
+body a {
+    color: #333; /* Cambia colore dei link */
+    text-decoration: none; /* Rimuovi il sottolineato dei link */
+    transition: color 0.3s ease-in-out;
+}
+
+body a:hover {
+    color: #f08080; /* Cambia colore al passaggio del mouse */
+}
+
 nav a {
     text-decoration: none;
     color: #fff;
@@ -50,6 +60,17 @@ nav a {
 
 nav a:hover {
     color: #e74c3c; /* Cambia colore al passaggio del mouse */
+}
+
+
+footer a {
+    color: #fff; /* Cambia colore dei link */
+    text-decoration: none; /* Rimuovi il sottolineato dei link */
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #333; /* Cambia colore al passaggio del mouse */
 }
 
 section {
@@ -69,7 +90,7 @@ h1 {
 
 p {
     line-height: 1.6;
-    color: #fff; /* Modificato il colore per contrastare con il rosso */
+    color: #555; /* Modificato il colore per contrastare con il bianco*/
 }
 
 footer {
@@ -80,6 +101,16 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+header p {
+    line-height: 1.6;
+    color: #fff; /* Modificato il colore per contrastare con il rosso*/
+}
+
+footer p {
+    line-height: 1.6;
+    color: #fff; /* Modificato il colore per contrastare con il rosso*/
 }
 
 /* Responsiveness */
