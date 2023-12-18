@@ -41,7 +41,7 @@ nav li {
 }
 
 body a {
-    color: #333; /* Cambia colore dei link */
+    color: #e74c3c; /* Cambia colore dei link */
     text-decoration: none; /* Rimuovi il sottolineato dei link */
     transition: color 0.3s ease-in-out;
 }

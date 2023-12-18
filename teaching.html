@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching - F. Della Santa</title>
+    <!-- Includi il link al file CSS di Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pubtabs.css">
+    <script>
+        function showTab(tabId) {
+            // Nascondi tutti i contenuti delle schede
+            var tabContents = document.querySelectorAll('.tab-content > div');
+            tabContents.forEach(function (content) {
+                content.classList.remove('active');
+            });
+
+            // Mostra solo il contenuto della scheda selezionata
+            var selectedTabContent = document.getElementById(tabId);
+            selectedTabContent.classList.add('active');
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <img src="immagine_del_ricercatore.jpg" alt="Foto del Ricercatore" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
+        <h1>Francesco Della Santa</h1>
+        <!-- Aggiungi icone per link esterni accanto alle voci "Posizione" e "Affiliazione" -->
+        <p>
+            <i class="fas fa-graduation-cap"></i> Assistant Professor |
+            <i class="fas fa-building"></i> Dipartimento di Scienze Matematiche G. L. Lagrange |
+            <i class="fas fa-map-marker-alt"></i> Politecnico di Torino, Turin, Italy
+        </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <!-- Aggiungi altri collegamenti alle tue pagine -->
+        </ul>
+    </nav>
+	
+    <section>
+        <!-- Aggiunti gruppi di schede per Corsi, Tesi, ecc. -->
+        <div class="tabs-group">
+            <div class="tab" onclick="showTab('courses-tab')">Courses</div>
+            <div class="tab" onclick="showTab('theses-tab')">Theses</div>
+            <div class="tab" onclick="showTab('other-tab')">Other</div>
+        </div>
+
+        <!-- Aggiunti contenuti delle schede -->
+        <div class="tab-content">
+            <!-- Contenuto della scheda Corsi -->
+            <div id="courses-tab" class="active">
+                <h2>Courses</h2>
+                <ol reversed>
+                    <li>
+		        <h3>Mathematics for Artificial Intelligence</h3>
+		        <h4>Original title: Matematica per l'Intelligenza Artificiale</h4>
+			<p>Teaching Assistant</p>
+		        <p>Bachelor course in Mathematical Engineering, Politecnico di Torino</p>
+		        <p>A.Y.s: from 2020/2021 to Present</p>
+		        <p>Language: italian</p>
+		    </li>
+		    
+                    <li>
+		        <h3>Numerical Optimization for Large Scale Problems and Stochastic Optimization</h3>
+			<p>Teaching Assistant</p>
+		        <p>Master course in Data Science and Engineering, Politecnico di Torino</p>
+		        <p>A.Y.s: from 2019/2020 to Present</p>
+		        <p>Language: english</p>
+		    </li>
+		    
+                    <li>
+		        <h3>Computational Linear Algebra for Large Scale Problems</h3>
+			<p>Teaching Assistant</p>
+		        <p>Master course in Data Science and Engineering, Politecnico di Torino</p>
+		        <p>A.Y.s: from 2019/2020 to Present</p>
+		        <p>Language: english</p>
+		    </li>
+		    
+                    <li>
+		        <h3>Programming and Scientific Computating</h3>
+		        <h4>Original title: Programmazione e Calcolo Scientifico</h4>
+			<p>Teaching Assistant</p>
+		        <p>Bachelor course in Mathematical Engineering, Politecnico di Torino</p>
+		        <p>A.Y.s: 2018/2019, 2019/2020</p>
+		        <p>Language: italian</p>
+		    </li>		    
+		    
+		    <li>
+		        <h3>Numerical Methods for Scientific Computing</h3>
+		        <h4>Original title: Metodi Numerici per il Calcolo Scientifico</h4>
+			<p>Teaching Assistant</p>
+		        <p>Master course in Aerospace Engineering, Politecnico di Torino</p>
+		        <p>A.Y.s: 2018/2019</p>
+		        <p>Language: italian</p>
+		    </li>
+
+		    
+		    <!-- Aggiungi altri corsi secondo lo stesso formato -->
+
+		</ol>
+            </div>
+
+            <!-- Contenuto della scheda Tesi -->
+            <div id="theses-tab">
+                <h2>Theses</h2>
+                <ol reversed>
+		    
+                    
+                </ol>
+            </div>
+            
+            <!-- Contenuto della scheda Other -->
+            <div id="other-tab">
+                <h2>Other</h2>
+                <ol reversed>
+		    
+                    
+                </ol>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+    <!-- Aggiungi icone social network nel footer -->
+    <p>
+        <i class="fas fa-envelope"></i> <a href="francesco.dellasanta@polito.it">francesco.dellasanta@polito.it</a> |
+        <i class="fab fa-github"></i> <a href="https://github.com/Fra0013To">GitHub</a> |
+        <i class="fab fa-orcid"></i> <a href="https://orcid.org/0000-0002-2202-9600"> ORCID</a> |
+        <i class="fab fa-researchgate"></i> <a href="https://www.researchgate.net/profile/Francesco-Della-Santa/research"> ResearchGate</a> |
+        <i class="ai ai-google-scholar-square ai-lg"></i> <a href="https://scholar.google.com/citations?user=yOiJ6ZUAAAAJ&hl=it"> Google Scholar</a> |
+        <i class="ai ai-scopus-square ai-lg"></i>  <a href="https://www.scopus.com/authid/detail.uri?authorId=57222506935">Scopus</a> | 
+        <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/francesco-della-santa-202a0613a/"> LinkedIn </a> |
+    </p>
+    </footer>
+
+</body>
+
+</html>
+
