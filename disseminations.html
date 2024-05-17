@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching - F. Della Santa</title>
+    <!-- Includi il link al file CSS di Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pubtabs.css">
+    <script>
+        function showTab(tabId) {
+            // Nascondi tutti i contenuti delle schede
+            var tabContents = document.querySelectorAll('.tab-content > div');
+            tabContents.forEach(function (content) {
+                content.classList.remove('active');
+            });
+
+            // Mostra solo il contenuto della scheda selezionata
+            var selectedTabContent = document.getElementById(tabId);
+            selectedTabContent.classList.add('active');
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <img src="immagine_del_ricercatore.jpg" alt="Foto del Ricercatore" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
+        <h1>Francesco Della Santa</h1>
+        <!-- Aggiungi icone per link esterni accanto alle voci "Posizione" e "Affiliazione" -->
+        <p>
+            <i class="fas fa-graduation-cap"></i> Assistant Professor |
+            <i class="fas fa-building"></i> Dipartimento di Scienze Matematiche G. L. Lagrange |
+            <i class="fas fa-map-marker-alt"></i> Politecnico di Torino, Turin, Italy
+        </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="disseminations.html">Disseminations</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <!-- Aggiungi altri collegamenti alle tue pagine -->
+        </ul>
+    </nav>
+	
+    <section>
+        <!-- Aggiunti gruppi di schede per Corsi, Tesi, ecc. -->
+        <div class="tabs-group">
+            <div class="tab" onclick="showTab('talks-tab')">Talks</div>
+            <div class="tab" onclick="showTab('lectures-tab')">Seminars & Lectures</div>
+            <div class="tab" onclick="showTab('organization-tab')">Organization</div>
+            <div class="tab" onclick="showTab('other-tab')">Other</div>
+        </div>
+
+        <!-- Aggiunti contenuti delle schede -->
+        <div class="tab-content">
+            <!-- Contenuto della scheda Talks -->
+            <div id="talks-tab" class="active">
+            	<h2>Invited Talks</h2>
+            	<ol reversed>
+            	    <li>
+		        <h3>Deep Learning per problemi differenziali e quantificazione dell’incertezza e metodi di addestramento</h3>
+		        <p><a href="https://www.altamatematica.it/gncs/2024/01/09/convegno-e-assemblea-gncs-2024/">Convegno Nazionale GNCS 2024</a></p>
+		        <p>Rimini (Italy), 14th-16th January 2024</p>
+		        <p>Presentation of the research activity 2023 of the research group</p>
+		    </li>
+		    <li>
+		        <h3>Graph Informed Deep Learning for Uncertainty Quantification in Discrete Fracture Networks</h3>
+		        <p><a href="https://www.simai.unipr.it/">Convegno Nazionale SIMAI 2020+2021</a></p>
+		        <p>Parma (Italy), 30th August - 3th September 2021</p>
+		    </li>
+		</ol>
+		
+                <h2>Contributed Talks</h2>
+                <ol reversed>
+		    <li>
+		        <h3>Discontinuity Detection via Graph-Informed Neural Networks and Sparse Grids</h3>
+		        <p><a href="https://dec.unibocconi.eu/mathematics-artificial-intelligence-and-machine-learning">Workshop Mathematics for Artificial Intelligence and Machine Learning</a></p>
+		        <p>Milano (Italy), 17th-19th January 2024</p>
+		    </li>
+		    <li>
+		        <h3>Graph-Informed Neural Networks for Discontinuity Detection</h3>
+		        <p><a href="https://sites.google.com/view/yamc2023/home">3rd Young Applied Mathematicians Conference (YAMC2023)</a></p>
+		        <p>Arenzano (Italy), 18th-22th September 2022</p>
+		    </li>
+		    <li>
+		        <h3>Graph-Informed Neural Networks for Physics-Informed Learning of Partial Differential Equation Solutions</h3>
+		        <p><a href="https://web.unibas.it/simai2023/">Convegno Nazionale SIMAI 2023</a></p>
+		        <p>Matera (Italy), 28th August - 1st September 2023</p>
+		    </li>
+		    <li>
+		        <h3>Learning Discontinuities via Discontinuous Neural Networks</h3>
+		        <p><a href="https://areeweb.polito.it/disma-excellence/events_2022/GiornateUMI/index.html">Matematica per l'Intelligenza Artificiale e il Machine Learning -
+Giovani ricercatori</a></p>
+		        <p>Turin (Italy), 24th-26th November 2022</p>
+		    </li>
+		    <li>
+		        <h3>Regression on Graphs via Graph-Informed Neural Networks</h3>
+		        <p><a href="https://www.siam.org/conferences/cm/conference/mds22">SIAM Conference on Mathematics of Data Science (MDS22)</a></p>
+		        <p>Hybrid, San Diego (California, USA), 26th-30th September 2022</p>
+		    </li>
+		    <li>
+		        <h3>Graph-Informed Neural Networks for Graph-Structured Data Learning</h3>
+		        <p><a href="https://www.uzerbinati.eu/Conference/2022/index.html">2nd Young Applied Mathematicians Conference (YAMC2022)</a></p>
+		        <p>Arenzano (Italy), 18th-22th September 2022</p>
+		    </li>
+		    <li>
+		        <h3>Uncertainty Quantification in Discrete Fracture Networks via Graph Informed Neural Networks</h3>
+		        <p><a href="https://areeweb.polito.it/disma-excellence/events_2020/Frame/index.html">Fractured media: numerical methods for fluid flow and mechanics (FRAME2020+2)</a></p>
+		        <p>Turin (Italy), 17th-20th May 2022</p>
+		    </li>
+		    <li>
+		        <h3>Graph-Informed Neural Networks and Regression on Graphs</h3>
+		        <p><a href="https://smartdata.polito.it/8th-smartdatapolito-workshop/">8th SmartData@PoliTO Workshop</a></p>
+		        <p>Arenzano (Italy), 25th-26th February 2022</p>
+		    </li>
+		    <li>
+		        <h3>Discontinuous Neural Networks and Discontinuity Learning</h3>
+		        <p><a href="https://eventi.unibo.it/primo-workshop-2021#:~:text=The%20workshop%20will%20take%20place,it%20as%20an%20hybrid%20event.">PRIMO Workshop 2021</a></p>
+		        <p>Bologna (Italy), 11th-13th October 2021</p>
+		    </li>
+		    <li>
+		        <h3>Flux Regression Performances of Deep Learning in Discrete Fracture Networks</h3>
+		        <p><a href="https://events.interpore.org/event/25/">Interpore 13th Annual Meeting</a></p>
+		        <p>Remote, 31st May - 4th June 2021</p>
+		    </li>
+		    <li>
+		        <h3>Graph-Informed Neural Networks for Flux Regression in Discrete Fracture Networks</h3>
+		        <p><a href="https://cmwrconference.org/2020/">Computational Methods in Water Resources XXIII (CMWR2020)</a></p>
+		        <p>Remote, 14th-17th December 2020</p>
+		        <p><b>Award winner:</b> <a href="https://cmwrconference.org/2020/award-winners/">Young researcher presenter</a></p>
+		    </li>
+		    <li>
+		        <h3>Analysis of Neural Network Performances for Flux Regression in Discrete Fracture Networks</h3>
+		        <p><a href="https://events.interpore.org/event/23/">Interpore 12th Annual Meeting</a></p>
+		        <p>Remote, 31st Agust - 4th September 2020</p>
+		    </li>
+		    <li>
+		        <h3>Flux Regression Neural Networks for Backbone Identification in Discrete Fracture Networks</h3>
+		        <p><a href="https://events.interpore.org/event/23/">Interpore 12th Annual Meeting</a></p>
+		        <p>Remote, 31st Agust - 4th September 2020</p>
+		    </li>
+		    <li>
+		        <h3>Discontinuous Neural Networks</h3>
+		        <p><a href="https://smartdata.polito.it/5th-smartdatapolito-workshop/">5th SmartData@PoliTO Workshop</a></p>
+		        <p>Barolo (Italy), 26th-27th September 2019</p>
+		    </li>
+		    <li>
+		        <h3>Multi-Task Neural Networks for Uncertainty Quantification in Discrete Fracture Networks</h3>
+		        <p><a href="https://webgol.dinfo.unifi.it/oba/">Summer School on Optimization, Big Data and Applications, 2n Ed. (OBA2019)</a></p>
+		        <p>Veroli (Italy), 1st-6th July 2019</p>
+		    </li>
+		    <li>
+		        <h3>Feed-Forward Neural Networks for Flux Regression in Discrete Fracture Networks</h3>
+		        <p><a href="https://events.interpore.org/event/12/">Interpore 11th Annual Meeting</a></p>
+		        <p>Valencia (Spain), 6th-10th May 2019</p>
+		    </li>
+		    <li>
+		        <h3>Neural Networks for Uncertainty Quantification in Discrete Fracture Networks</h3>
+		        <p><a href="https://smartdata.polito.it/4th-smartdata-workshop-public/">4th SmartData@PoliTO Workshop</a></p>
+		        <p>Turin (Italy), 27th-28th February 2019</p>
+		    </li>
+		    <li>
+		        <h3>Machine Learning for Flux Regression in Discrete Fracture Networks</h3>
+		        <p><a href="https://smartdata.polito.it/3rd-smartdatapolito-workshop-on-big-data-and-data-science/">3rd SmartData@PoliTO Workshop</a></p>
+		        <p>Turin (Italy), 24th September 2018</p>
+		    </li>
+		    
+		    <!-- Aggiungi altri talk secondo lo stesso formato -->
+
+		</ol>
+            </div>
+
+            <!-- Contenuto della scheda Lectures -->
+            <div id="lectures-tab">
+                <h2>Lectures</h2>
+                <ol reversed>
+                    <li>
+		        <h3>Lecture Title</h3>
+		        <p>Joint work with: other authors</p>
+		        <p><a href="https://website.com">Conference Name</a></p>
+		        <p>Extra info</p>
+		        <p>URL: <a href="https://slides.pdf"> Slides (if available)</a>
+		    </li>
+		    
+		    <!-- Aggiungi altre lectures secondo lo stesso formato -->		    
+                    
+                </ol>
+            </div>
+            
+            <!-- Contenuto della scheda Organizer -->
+            <div id="organization-tab">
+                <h2>Organization</h2>
+                <ol reversed>
+                    <li>
+		        <h3>Thing Organized</h3>
+		        <p>Joint work with: other authors</p>
+		        <p><a href="https://website.com">Conference Name (if inside a conference) </a></p>
+		        <p>Extra info</p>
+		    </li>
+		    
+		    <!-- Aggiungi altre cose organizzate secondo lo stesso formato -->
+
+		</ol>
+            </div>
+            
+            <!-- Contenuto della scheda Other -->
+            <div id="other-tab">
+                <h2>Other</h2>
+                <ol reversed>
+		    
+                    
+                </ol>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+    <!-- Aggiungi icone social network nel footer -->
+    <p>
+        <i class="fas fa-envelope"></i> <a href="francesco.dellasanta@polito.it">francesco.dellasanta@polito.it</a> |
+        <i class="fab fa-github"></i> <a href="https://github.com/Fra0013To">GitHub</a> |
+        <i class="fab fa-orcid"></i> <a href="https://orcid.org/0000-0002-2202-9600"> ORCID</a> |
+        <i class="fab fa-researchgate"></i> <a href="https://www.researchgate.net/profile/Francesco-Della-Santa/research"> ResearchGate</a> |
+        <i class="ai ai-google-scholar-square ai-lg"></i> <a href="https://scholar.google.com/citations?user=yOiJ6ZUAAAAJ&hl=it"> Google Scholar</a> |
+        <i class="ai ai-scopus-square ai-lg"></i>  <a href="https://www.scopus.com/authid/detail.uri?authorId=57222506935">Scopus</a> | 
+        <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/francesco-della-santa-202a0613a/"> LinkedIn </a> |
+    </p>
+    </footer>
+
+</body>
+
+</html>
+
