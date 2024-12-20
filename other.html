@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other - F. Della Santa</title>
+    <!-- Includi il link al file CSS di Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pubtabs.css">
+    <script>
+        function showTab(tabId) {
+            // Nascondi tutti i contenuti delle schede
+            var tabContents = document.querySelectorAll('.tab-content > div');
+            tabContents.forEach(function (content) {
+                content.classList.remove('active');
+            });
+
+            // Mostra solo il contenuto della scheda selezionata
+            var selectedTabContent = document.getElementById(tabId);
+            selectedTabContent.classList.add('active');
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <img src="immagine_del_ricercatore.jpg" alt="Foto del Ricercatore" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
+        <h1>Francesco Della Santa</h1>
+        <!-- Aggiungi icone per link esterni accanto alle voci "Posizione" e "Affiliazione" -->
+        <p>
+            <i class="fas fa-graduation-cap"></i> Assistant Professor |
+            <i class="fas fa-building"></i> Dipartimento di Scienze Matematiche G. L. Lagrange |
+            <i class="fas fa-map-marker-alt"></i> Politecnico di Torino, Turin, Italy
+        </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="disseminations.html">Disseminations</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="other.html">Other</a></li>
+            <!-- Aggiungi altri collegamenti alle tue pagine -->
+        </ul>
+    </nav>
+	
+    <section>
+        <!-- Aggiunti gruppi di schede per Awards, ecc. -->
+        <div class="tabs-group">
+            <div class="tab" onclick="showTab('fundings-tab')">Fundings</div>
+            <div class="tab" onclick="showTab('awards-tab')">Awards</div>
+            <div class="tab" onclick="showTab('other-tab')">Other</div>
+        </div>
+        
+        <!-- Aggiunti contenuti delle schede -->
+        <div class="tab-content">
+            <!-- Contenuto della scheda Awards -->
+            <div id="fundings-tab" class="active">
+                <h2>Fundings</h2>
+                <ol reversed>
+                    <li>
+		        <h3>Bridge Risk Identification using Data-driven Geospatial Evaluation (BRIDGE)</h3>
+		        <p><b>Funding Project and/or Entity:</b> <a href="https://www.polito.it/ricerca/finanziamenti-per-la-ricerca/finanziamenti-e-iniziative-di-ateneo/polihackdays">Poli Hack Days 2024</a>, Politecnico di Torino</p>
+		        <p><b>Principal Investigator:</b> F. Pino</p>
+		        <p><b>Other memebers:</b> M. Civera, F. Della Santa, F. Khosro Anjom</p>
+		        <p><b>Total Funding:</b> 16.000,00€</p>
+		    </li>
+                    <li>
+		        <h3>Deep Learning for differential problems and uncertainty quantification, and training methods</h3>
+		        <p><b>Funding Project and/or Entity:</b> INdAM – GNCS Project 2023</p>
+		        <p><b>Principal Investigator:</b> F. Della Santa</p>
+		        <p><b>Other memebers:</b> A. Festa, B. Morini, A. Papini, E. Perracchione, S.Pieraccini, F. Vicini, D. Oberto, M. Pintore</p>
+		        <p><b>Total Funding:</b> 3.850,00€</p>
+		    </li>
+                    <li>
+		        <h3>Machine Learning Simulations for Uncertainty Quantification in Partial Differential Equation models</h3>
+		        <p><b>Funding Project and/or Entity:</b> Young researchers funding 2022-2023, INdAM-GNCS</p>
+		        <p><b>Principal Investigator:</b> F. Della Santa</p>
+		        <p><b>Other memebers:</b> - </p>
+		        <p><b>Total Funding:</b> 1.000,00€</p>
+		    </li>
+                </ol>
+            </div>
+            
+            <!-- Contenuto della scheda Awards -->
+            <div id="awards-tab">
+                <h2>Awards</h2>
+                <ol reversed>
+                    <li>
+		        <h3>Bridge Risk Identification using Data-driven Geospatial Evaluation (BRIDGE)</h3>
+		        <p><b>Funding Project and/or Entity:</b> <a href="https://www.polito.it/ricerca/finanziamenti-per-la-ricerca/finanziamenti-e-iniziative-di-ateneo/polihackdays">Poli Hack Days 2024</a>, Politecnico di Torino</p>
+		        <p>Winning project (Funded), November 2024</p>
+		    </li>
+		    <li>
+		        <h3>Young Researcher Presenter Award</h3>
+		        <p><a href="https://cmwrconference.org/2020/award-winners/"> Computational Methods in Water Resources (CMWR2020)</a></p>
+		        <p>December 2020</p>
+		    </li>             
+                </ol>
+            </div>
+            
+            <!-- Contenuto della scheda Other -->
+            <div id="other-tab">
+                <h2>Other</h2>
+                <ol reversed>
+		    
+                    
+                </ol>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+    <!-- Aggiungi icone social network nel footer -->
+    <p>
+        <i class="fas fa-envelope"></i> <a href="francesco.dellasanta@polito.it">francesco.dellasanta@polito.it</a> |
+        <i class="fab fa-github"></i> <a href="https://github.com/Fra0013To">GitHub</a> |
+        <i class="fab fa-orcid"></i> <a href="https://orcid.org/0000-0002-2202-9600"> ORCID</a> |
+        <i class="fab fa-researchgate"></i> <a href="https://www.researchgate.net/profile/Francesco-Della-Santa/research"> ResearchGate</a> |
+        <i class="ai ai-google-scholar-square ai-lg"></i> <a href="https://scholar.google.com/citations?user=yOiJ6ZUAAAAJ&hl=it"> Google Scholar</a> |
+        <i class="ai ai-scopus-square ai-lg"></i>  <a href="https://www.scopus.com/authid/detail.uri?authorId=57222506935">Scopus</a> | 
+        <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/francesco-della-santa-202a0613a/"> LinkedIn </a> |
+    </p>
+    </footer>
+
+</body>
+
+</html>
+
