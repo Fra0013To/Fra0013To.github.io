@@ -52,6 +52,7 @@
         <!-- Aggiunti gruppi di schede per Corsi, Tesi, ecc. -->
         <div class="tabs-group">
             <div class="tab" onclick="showTab('courses-tab')">Courses</div>
+            <div class="tab" onclick="showTab('phd-tab')">Ph.D. Students</div>
             <div class="tab" onclick="showTab('theses-tab')">Theses</div>
             <div class="tab" onclick="showTab('other-tab')">Other</div>
         </div>
@@ -60,7 +61,20 @@
         <div class="tab-content">
             <!-- Contenuto della scheda Corsi -->
             <div id="courses-tab" class="active">
-                <h2>Courses</h2>
+            	<h2>Doctoral Courses</h2>
+                <ol reversed>
+                    <li>
+		        <h3>Formalization and Advanced Design of Neural Networks in Deep Learning</h3>
+			<p>Course Leader and Instructor</p>
+		        <p>Doctoral course in Mathematical Sciences, Politecnico di Torino</p>
+		        <p>Duration: 15 hours</p>
+		        <p>A.Y.: 2024/2025</p>
+		        <p>Language: english</p>
+		    </li>		    
+		    <!-- Aggiungi altri corsi secondo lo stesso formato -->
+
+		</ol>
+                <h2>Bachelor/Master Courses</h2>
                 <ol reversed>
                     <li>
 		        <h3>Mathematics for Artificial Intelligence</h3>
@@ -70,23 +84,20 @@
 		        <p>A.Y.s: from 2020/2021 to Present</p>
 		        <p>Language: italian</p>
 		    </li>
-		    
                     <li>
 		        <h3>Numerical Optimization for Large Scale Problems and Stochastic Optimization</h3>
 			<p>Teaching Assistant</p>
 		        <p>Master course in Data Science and Engineering, Politecnico di Torino</p>
 		        <p>A.Y.s: from 2019/2020 to Present</p>
 		        <p>Language: english</p>
-		    </li>
-		    
+		    </li>		    
                     <li>
 		        <h3>Computational Linear Algebra for Large Scale Problems</h3>
 			<p>Teaching Assistant</p>
 		        <p>Master course in Data Science and Engineering, Politecnico di Torino</p>
 		        <p>A.Y.s: from 2019/2020 to Present</p>
 		        <p>Language: english</p>
-		    </li>
-		    
+		    </li>		    
                     <li>
 		        <h3>Programming and Scientific Computating</h3>
 		        <h4>Original title: Programmazione e Calcolo Scientifico</h4>
@@ -94,8 +105,7 @@
 		        <p>Bachelor course in Mathematical Engineering, Politecnico di Torino</p>
 		        <p>A.Y.s: 2018/2019, 2019/2020</p>
 		        <p>Language: italian</p>
-		    </li>		    
-		    
+		    </li>
 		    <li>
 		        <h3>Numerical Methods for Scientific Computing</h3>
 		        <h4>Original title: Metodi Numerici per il Calcolo Scientifico</h4>
@@ -110,11 +120,33 @@
 
 		</ol>
             </div>
+            
+            <!-- Contenuto della scheda PhD Students -->
+            <div id="phd-tab">
+            	<h2>Ph.D. Students</h2>
+                <ol reversed>
+                    <li>
+		        <h3>Filippo Aglietti</h3>
+		        <p><b>Thesis:</b> - </p>
+		        <p><b>Supervisors:</b> F. Millo, A. Piano, F. Della Santa</p>
+			<p>Ph.D. in Energetics , 38th cycle (2022-2025)</p>
+			<p>Dumarey and Departiment of Energy (DENERG), Politecnico di Torino</p>
+		    </li>     
+		    <!-- Aggiungi altri PhD students secondo lo stesso formato -->
+		</ol>
+            </div>
 
             <!-- Contenuto della scheda Tesi -->
             <div id="theses-tab">
                 <h2>Master Theses</h2>
                 <ol reversed>
+                    <li>
+		        <h3>Predizione del Rischio di Collasso dei Ponti Mediante Deep Learning e dati InSAR</h3>
+		        <p><b>Candidate:</b> Federico Sisci</p>
+		        <p><b>Supervisor:</b> F. Della Santa</p>
+			<p>Master degree in Mathematical Engineering, Politecnico di Torino</p>
+		        <p>October 2025</p>
+		    </li> 
                     <li>
 		        <h3>Studio ed applicazione di strumenti di Machine Learning per l’interpretazione e l’analisi di dati finanziari</h3>
 		        <p><b>Candidate:</b> Valeria Bo</p>
